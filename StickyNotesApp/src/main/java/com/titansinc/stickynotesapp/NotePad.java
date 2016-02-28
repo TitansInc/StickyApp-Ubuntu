@@ -99,7 +99,9 @@ public class NotePad extends JPanel {
         frame.setLocation(new Random().nextInt(2000),new Random().nextInt(900));
         frame.add(this);
         frame.pack();
+        try{
         frame.setOpacity((float) 0.85);
+        }catch(Exception e){}
         frame.setVisible(true);
         frame.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
